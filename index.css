@@ -1,0 +1,226 @@
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 2rem;
+  background-color: #eee;
+}
+
+.post {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.post__left, .post__right {
+  width: calc(50% - 1rem);
+}
+
+.post__media {
+  height: 25rem;
+  position: relative;
+  margin-bottom: 3.5rem;
+}
+
+.post__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+
+.post__img--small {
+  width: 15rem;
+  height: 10rem;
+  margin-right: 1.5rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.post__category {
+  position: absolute;
+  color: white;
+  font-size: 1.6rem;
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 2rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(#fc556f), to(#fd9c84));
+  background-image: linear-gradient(to right, #fc556f, #fd9c84);
+  top: 2rem;
+  left: 2rem;
+  z-index: 2;
+}
+
+.post__icon {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  font-size: 3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  background-image: -webkit-gradient(linear, left top, right top, from(#fc556f), to(#fd9c84));
+  background-image: linear-gradient(to right, #fc556f, #fd9c84);
+  position: absolute;
+  right: 2rem;
+  bottom: 0;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  z-index: 2;
+}
+
+.post-author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.post-author__avt {
+  margin-right: 1rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.post-author__name {
+  color: black;
+  position: relative;
+  margin-right: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.post-author__name:after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #fc556f;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.post__date {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #999;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.4rem;
+}
+
+.post__title {
+  font-weight: bold;
+  color: black;
+  line-height: 1.6;
+  font-size: 1.6rem;
+}
+
+.post__title--right {
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.post__desc {
+  font-weight: bold;
+  color: #999;
+  line-height: 1.6;
+  font-size: 1.2rem;
+}
+
+.post__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.post__item:not(:last-child) {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.post__content {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.post__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media screen and (max-width: 767px) {
+  .post__left, .post__right {
+    width: 100%;
+  }
+  .post__img--small {
+    width: 8rem;
+    height: 8rem;
+  }
+  .post__tittle {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+  }
+  .post__tittle--small {
+    margin-bottom: 1rem;
+  }
+}
+/*# sourceMappingURL=uinew.css.map */
